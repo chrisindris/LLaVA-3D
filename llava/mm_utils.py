@@ -190,6 +190,9 @@ def process_images(images, image_processor, model_cfg):
     return new_images
 
 def process_videos(videos, video_processor, mode='random', device=None, text=None):
+    
+    breakpoint()
+    
     if isinstance(videos, str):
         videos = [videos]
     new_videos = []

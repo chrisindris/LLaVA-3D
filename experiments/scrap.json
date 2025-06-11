@@ -3,7 +3,7 @@
         "question_id": 220602000226,
         "prompt": "The bathroom is on which side of me?",
         "text": "Right.",
-        "answer_id": "HR6rUZvfCudrMuGRvzzpTf",
+        "answer_id": "G8C2ZKLFqp2zW6TLcBYAcv",
         "model_id": "LLaVA-3D-7B",
         "metadata": {}
     },
@@ -11,7 +11,7 @@
         "question_id": 220602001075,
         "prompt": "Are the curtains to my left covering the entire window?",
         "text": "Yes.",
-        "answer_id": "C4bfirVs9ppmrWqLFUZrEC",
+        "answer_id": "QSpWkb2LwynYM9V3yk3ue5",
         "model_id": "LLaVA-3D-7B",
         "metadata": {}
     },
@@ -19,7 +19,7 @@
         "question_id": 220602001109,
         "prompt": "What object has two wheels in front of me?",
         "text": "Bicycle.",
-        "answer_id": "8c6bhK5NyHDX9NQ4Ug5fEn",
+        "answer_id": "Jxnr4E2W4zemmkoKJFTsK6",
         "model_id": "LLaVA-3D-7B",
         "metadata": {}
     },
@@ -27,7 +27,7 @@
         "question_id": 220602001161,
         "prompt": "How many beds are behind to the right?",
         "text": "1.",
-        "answer_id": "CuNfRCvRJFz2EbcHgusLuH",
+        "answer_id": "NQ3qwjkBtj7bPCNAiMTkVh",
         "model_id": "LLaVA-3D-7B",
         "metadata": {}
     },
@@ -35,7 +35,7 @@
         "question_id": 220602002374,
         "prompt": "What is in front of me that moves on two wheels?",
         "text": "Bicycle.",
-        "answer_id": "QcjEQEPc5ZEoaZa24Lkv4N",
+        "answer_id": "NzdL5oSEc5yAEirHwUTaf4",
         "model_id": "LLaVA-3D-7B",
         "metadata": {}
     },
@@ -43,7 +43,7 @@
         "question_id": 220602002534,
         "prompt": "What is the closest thing behind me?",
         "text": "Bed.",
-        "answer_id": "A7pAhuqtEAdpykpBRwnmjZ",
+        "answer_id": "EeYYRrENFCZNXbVNoUp4cT",
         "model_id": "LLaVA-3D-7B",
         "metadata": {}
     },
@@ -51,7 +51,7 @@
         "question_id": 220602002872,
         "prompt": "Is there a toaster to my left?",
         "text": "No.",
-        "answer_id": "7avc4WUqpcQeokAbZ3h8fR",
+        "answer_id": "UjDEyitQK9gwHA3i5edScN",
         "model_id": "LLaVA-3D-7B",
         "metadata": {}
     },
@@ -59,7 +59,7 @@
         "question_id": 220602003077,
         "prompt": "How many stools are under the table behind me?",
         "text": "4.",
-        "answer_id": "69BgAgieM7e8dyWZRHSVK9",
+        "answer_id": "4cs4PDdHYbs3r8SUpGiKFT",
         "model_id": "LLaVA-3D-7B",
         "metadata": {}
     },
@@ -67,7 +67,7 @@
         "question_id": 220602003430,
         "prompt": "What color is the blanket on the bed to my left?",
         "text": "Blue.",
-        "answer_id": "BJRdtAEeL9VUCvKrCLugZ4",
+        "answer_id": "knhSXSVwKrpvgLxbwEr3qC",
         "model_id": "LLaVA-3D-7B",
         "metadata": {}
     },
@@ -75,7 +75,7 @@
         "question_id": 220602003471,
         "prompt": "What is the corner in front of me to the left?",
         "text": "Couch.",
-        "answer_id": "X2TvfgrbEAp3reKe55pR6x",
+        "answer_id": "G9Fmc9Da7GgRdq3Gde8Air",
         "model_id": "LLaVA-3D-7B",
         "metadata": {}
     },
@@ -83,7 +83,7 @@
         "question_id": 220602003764,
         "prompt": "Is the TV in front of me on or off?",
         "text": "Off.",
-        "answer_id": "ij4UL9D3Gp9jPpy49okwfE",
+        "answer_id": "cGBZn27GwCo3Rz3LoggG3m",
         "model_id": "LLaVA-3D-7B",
         "metadata": {}
     },
@@ -91,7 +91,7 @@
         "question_id": 220602005827,
         "prompt": "What color is the bed behind me to the left side of the room?",
         "text": "Blue.",
-        "answer_id": "8b3aZfkqVLjSk3bHgz6gtg",
+        "answer_id": "k5HvJ7yDwyhp5ccgcpTwyH",
         "model_id": "LLaVA-3D-7B",
         "metadata": {}
     },
@@ -99,7 +99,7 @@
         "question_id": 220602006555,
         "prompt": "How many doors are on the right?",
         "text": "11.",
-        "answer_id": "ifnCTEDTmAmJjNqfVTaEsM",
+        "answer_id": "oEAfyyMnv3SPj5Kz89Ahzi",
         "model_id": "LLaVA-3D-7B",
         "metadata": {}
     },
@@ -107,7 +107,7 @@
         "question_id": 220602006854,
         "prompt": "Is the bathroom behind me?",
         "text": "Yes.",
-        "answer_id": "EWHvb3GYAwovf8aMpJf4RG",
+        "answer_id": "LkjvrAVPgUme3NhPNhBjUh",
         "model_id": "LLaVA-3D-7B",
         "metadata": {}
     },
@@ -115,7 +115,7 @@
         "question_id": 220602007733,
         "prompt": "What letter resembles the couch behind me?",
         "text": "L.",
-        "answer_id": "bA58dBvov3bPGBuF3FSuwa",
+        "answer_id": "JycvHNYRxnNCyMA4Pw5PuX",
         "model_id": "LLaVA-3D-7B",
         "metadata": {}
     },
@@ -123,7 +123,7 @@
         "question_id": 220602007913,
         "prompt": "Is the toilet cover in bathroom to my right closed or open?",
         "text": "Closed.",
-        "answer_id": "cF5DUsCjsSerX3MUfqBDxk",
+        "answer_id": "BRkvA53ccBc77qkCDhrRw5",
         "model_id": "LLaVA-3D-7B",
         "metadata": {}
     },
@@ -131,7 +131,7 @@
         "question_id": 220602007916,
         "prompt": "What is on top of the bed that is on my 7 o'clock?",
         "text": "Pillow.",
-        "answer_id": "eNcV3xQhxHGaPhZpASPgwo",
+        "answer_id": "MzZNAMiE6NQzp2fMaStYGX",
         "model_id": "LLaVA-3D-7B",
         "metadata": {}
     },
@@ -139,7 +139,7 @@
         "question_id": 220602007968,
         "prompt": "What material are the stools made of by the table to my top right side, front?",
         "text": "Wood.",
-        "answer_id": "BRZrXKi4QXcEgkRQctB75t",
+        "answer_id": "DMqqo7wRVoGPLUEoHJoUXR",
         "model_id": "LLaVA-3D-7B",
         "metadata": {}
     },
@@ -147,7 +147,7 @@
         "question_id": 220602008187,
         "prompt": "What is to my left that is blocking out the sun?",
         "text": "Curtain.",
-        "answer_id": "eygRMiFUwojrpDXLnei8T2",
+        "answer_id": "KeGYAUgKU48Jo3qg6BNqzo",
         "model_id": "LLaVA-3D-7B",
         "metadata": {}
     },
@@ -155,15 +155,15 @@
         "question_id": 220602008265,
         "prompt": "What object is closed that is in front of me behind the bike?",
         "text": "Curtain.",
-        "answer_id": "kXRcQNBKngWUBg4eLmfyv4",
+        "answer_id": "NN8VhUsD5kvRFJXf6yeNXH",
         "model_id": "LLaVA-3D-7B",
         "metadata": {}
     },
     {
         "question_id": 220602008895,
         "prompt": "What color is behind me in the next room?",
-        "text": "Brown.",
-        "answer_id": "SDxPuniAcViAzQNwzcC3tE",
+        "text": "White.",
+        "answer_id": "oBbzqXaHnLAy6MjLRNM8mn",
         "model_id": "LLaVA-3D-7B",
         "metadata": {}
     },
@@ -171,7 +171,7 @@
         "question_id": 220602009433,
         "prompt": "What is on top of the refrigerator in front of me?",
         "text": "Microwave.",
-        "answer_id": "bnRHHzdXtSH3w94LGfE7vc",
+        "answer_id": "TRW9XLSm6e6Aobo24oHHgL",
         "model_id": "LLaVA-3D-7B",
         "metadata": {}
     },
@@ -179,7 +179,7 @@
         "question_id": 220602009521,
         "prompt": "What is square and I can use to sleep in front of me?",
         "text": "Bed.",
-        "answer_id": "j42gXSnQPvmfBDofYTeg9u",
+        "answer_id": "Zpw4iZCXGDdPSPAZt9qU8n",
         "model_id": "LLaVA-3D-7B",
         "metadata": {}
     },
@@ -187,7 +187,7 @@
         "question_id": 220602009591,
         "prompt": "How many cabinets are in the room?",
         "text": "11.",
-        "answer_id": "o2DQGgeGRQjXp4NdekBa7Z",
+        "answer_id": "ZvDasczPVTGvS294YiFEM2",
         "model_id": "LLaVA-3D-7B",
         "metadata": {}
     },
@@ -195,7 +195,7 @@
         "question_id": 220602010838,
         "prompt": "Is the window covered by the curtain or visible in front of me?",
         "text": "Covered by the curtain.",
-        "answer_id": "KVzdqrgHQ8fatTYH9yFWrf",
+        "answer_id": "Ccn7w9FsSNFwtx2aCk25Hr",
         "model_id": "LLaVA-3D-7B",
         "metadata": {}
     },
@@ -203,7 +203,7 @@
         "question_id": 220602011487,
         "prompt": "If I wanted to use the bathroom, what direction should I go?",
         "text": "Right.",
-        "answer_id": "FbRqL3JCCujKFYjDZ3Y3Rh",
+        "answer_id": "6UJyaBrsgZD46hbBprgwsk",
         "model_id": "LLaVA-3D-7B",
         "metadata": {}
     },
@@ -211,7 +211,7 @@
         "question_id": 220602011489,
         "prompt": "What type of couch is in front of me?",
         "text": "Sectional.",
-        "answer_id": "6TpfcMMvp7Vpbv7WLWjsdH",
+        "answer_id": "CDvcvXyasS94XgdrAqatss",
         "model_id": "LLaVA-3D-7B",
         "metadata": {}
     },
@@ -219,7 +219,7 @@
         "question_id": 220602011501,
         "prompt": "What is below the kitchen counter on my left?",
         "text": "Kitchen cabinets.",
-        "answer_id": "LxW2Uxr9XoU3cTdv2j6fH9",
+        "answer_id": "hNCmPQxwAqLLAFqzz22RWy",
         "model_id": "LLaVA-3D-7B",
         "metadata": {}
     },
@@ -227,7 +227,7 @@
         "question_id": 220602012311,
         "prompt": "What shape is the couch behind me?",
         "text": "Rectangular.",
-        "answer_id": "BPCAFJHY7fZujahZETqoHa",
+        "answer_id": "FWBzyGZskTs8hdaQtXHYS5",
         "model_id": "LLaVA-3D-7B",
         "metadata": {}
     },
@@ -235,7 +235,7 @@
         "question_id": 220602012693,
         "prompt": "Is the TV on or off in front of me to left by cabinet?",
         "text": "Off.",
-        "answer_id": "Ar7PtB4YJjJAMgDhwGb24P",
+        "answer_id": "XZT8xJqG5sg4JGyys8tHh5",
         "model_id": "LLaVA-3D-7B",
         "metadata": {}
     },
@@ -243,7 +243,7 @@
         "question_id": 220602014838,
         "prompt": "Is the TV on to my right side?",
         "text": "Yes.",
-        "answer_id": "SziqPRnh6jTeLfh5LbEF9r",
+        "answer_id": "7RC2dYYsrYnRDeGWHb6brq",
         "model_id": "LLaVA-3D-7B",
         "metadata": {}
     },
@@ -251,7 +251,7 @@
         "question_id": 220602014860,
         "prompt": "What color is the blanket on the bed, behind me to the right?",
         "text": "Blue.",
-        "answer_id": "CLT6ahu3BDfBiVoPfXDyDo",
+        "answer_id": "agnSQUsWY6kM4aGtSuYRyS",
         "model_id": "LLaVA-3D-7B",
         "metadata": {}
     },
@@ -259,7 +259,7 @@
         "question_id": 220602016180,
         "prompt": "Which direction is the refrigerator?",
         "text": "Left.",
-        "answer_id": "QBFNwPq6K3TDgy2S7uDya4",
+        "answer_id": "9FTBsSPMbppYENxuA69csV",
         "model_id": "LLaVA-3D-7B",
         "metadata": {}
     },
@@ -267,7 +267,7 @@
         "question_id": 220602016222,
         "prompt": "How many kitchen counters are on the left?",
         "text": "1.",
-        "answer_id": "VVmSndxRPAVXnJACjedvd6",
+        "answer_id": "nkaHArrHmVv5Ve2uSNmKTi",
         "model_id": "LLaVA-3D-7B",
         "metadata": {}
     },
@@ -275,7 +275,7 @@
         "question_id": 220602016247,
         "prompt": "What color is the blanket on the bed to my left behind me?",
         "text": "Blue.",
-        "answer_id": "RNHCnafTPBxjYqrxuTPEmY",
+        "answer_id": "7hLkiyujtYvJiLFTK5Fhpd",
         "model_id": "LLaVA-3D-7B",
         "metadata": {}
     },
@@ -283,7 +283,7 @@
         "question_id": 220602016378,
         "prompt": "Which direction do I need to look to see the TV?",
         "text": "Left.",
-        "answer_id": "NjUXdtbLhjbM2SbHMZTUNZ",
+        "answer_id": "7ne73MxQSth2r6dRs2aRvd",
         "model_id": "LLaVA-3D-7B",
         "metadata": {}
     },
@@ -291,7 +291,7 @@
         "question_id": 220602016944,
         "prompt": "Is the door to my right open or closed?",
         "text": "Closed.",
-        "answer_id": "MUfoDLUD3i5mRf83bukypz",
+        "answer_id": "K2VvQFib8P8j39xMPSf5jY",
         "model_id": "LLaVA-3D-7B",
         "metadata": {}
     },
@@ -299,7 +299,7 @@
         "question_id": 220602017085,
         "prompt": "What shape is the couch to my left side resembles?",
         "text": "L-shaped.",
-        "answer_id": "W6YGoNzKYU7ycxrjEBWnoa",
+        "answer_id": "JnPBFFCrLNXiHfi8JeH7iK",
         "model_id": "LLaVA-3D-7B",
         "metadata": {}
     },
@@ -307,7 +307,7 @@
         "question_id": 220602017446,
         "prompt": "What is on the left of the couch that is behind me?",
         "text": "Stool.",
-        "answer_id": "NkRrus9R7pkfFXxmUxmVaD",
+        "answer_id": "R6997kYuuz5ntqq6JwyuAC",
         "model_id": "LLaVA-3D-7B",
         "metadata": {}
     },
@@ -315,7 +315,7 @@
         "question_id": 220602017504,
         "prompt": "What shape is the couch behind me to the left next room resembles?",
         "text": "L-shaped.",
-        "answer_id": "VvC8PygxHwWFqwnKUoxKWc",
+        "answer_id": "Ntjkexrtjqvuxcnvf9Exe9",
         "model_id": "LLaVA-3D-7B",
         "metadata": {}
     },
@@ -323,7 +323,7 @@
         "question_id": 220602017601,
         "prompt": "What letter resembles the couch in front of me?",
         "text": "L.",
-        "answer_id": "cCY34ZBpSdXRemd2FNvyHm",
+        "answer_id": "MpDRHvprGb5aVLdcy67H7c",
         "model_id": "LLaVA-3D-7B",
         "metadata": {}
     },
@@ -331,7 +331,7 @@
         "question_id": 220602017797,
         "prompt": "What is inside the cabinet that is on my right?",
         "text": "Microwave.",
-        "answer_id": "f8QkgVYaL779Be28j3NB5z",
+        "answer_id": "DheofHfn4gboAMhfXX5oNk",
         "model_id": "LLaVA-3D-7B",
         "metadata": {}
     },
@@ -339,7 +339,7 @@
         "question_id": 220602018009,
         "prompt": "What color is the bed to my right behind me?",
         "text": "Blue.",
-        "answer_id": "brgEjVYHkpVcNtKgqGxu4f",
+        "answer_id": "PwssLiLKEabwbAjFT7gri3",
         "model_id": "LLaVA-3D-7B",
         "metadata": {}
     },
@@ -347,7 +347,7 @@
         "question_id": 220602018512,
         "prompt": "What object is in front of me that he is two wheels to the left side?",
         "text": "Bicycle.",
-        "answer_id": "X6xWz5eXrUAZkfAcLFaX7L",
+        "answer_id": "NvVZtnjvxVKyiok6LeCBFJ",
         "model_id": "LLaVA-3D-7B",
         "metadata": {}
     },
@@ -355,7 +355,7 @@
         "question_id": 220602018581,
         "prompt": "Is the light on in the bathroom in front of me?",
         "text": "Yes.",
-        "answer_id": "AqHLQ2J2Jk2g56BwcNTAyW",
+        "answer_id": "X3UKJ6qPuFhozHFe5zp2D6",
         "model_id": "LLaVA-3D-7B",
         "metadata": {}
     },
@@ -363,7 +363,7 @@
         "question_id": 220602019431,
         "prompt": "What can I see that has two wheels?",
         "text": "Bicycle.",
-        "answer_id": "ftcdKmqz3pQePRtTK2dykZ",
+        "answer_id": "QwhiMawippdNPbjcnynx8d",
         "model_id": "LLaVA-3D-7B",
         "metadata": {}
     },
@@ -371,7 +371,7 @@
         "question_id": 220602020636,
         "prompt": "Are the curtains on my right closed or open?",
         "text": "Closed.",
-        "answer_id": "Pzp5gYgUFiQSNNDcXWQ5TY",
+        "answer_id": "LyUmMUivBtjHsFpfnELbUY",
         "model_id": "LLaVA-3D-7B",
         "metadata": {}
     },
@@ -379,7 +379,7 @@
         "question_id": 220602021293,
         "prompt": "What color is the bed in front of me?",
         "text": "Blue.",
-        "answer_id": "ZHCK6ZYu6rQWCLjUf28JLN",
+        "answer_id": "CgFzWDWVg2aTbSCEotSV8Y",
         "model_id": "LLaVA-3D-7B",
         "metadata": {}
     },
@@ -387,7 +387,7 @@
         "question_id": 220602021615,
         "prompt": "Is the toilet seat covered up or down?",
         "text": "Down.",
-        "answer_id": "cKCPTxYnLBaaracywbarjY",
+        "answer_id": "8byq8kdjoEGxwEDVrmP4vB",
         "model_id": "LLaVA-3D-7B",
         "metadata": {}
     },
@@ -395,7 +395,7 @@
         "question_id": 220602022891,
         "prompt": "What letter resembles the couch behind me?",
         "text": "L.",
-        "answer_id": "bCETzAZpknPKV2GE8jfqe9",
+        "answer_id": "BLq6dYQY9XNnDBD7xpDKVR",
         "model_id": "LLaVA-3D-7B",
         "metadata": {}
     },
@@ -403,7 +403,7 @@
         "question_id": 220602022908,
         "prompt": "How many kitchen cabinets are on the left?",
         "text": "11.",
-        "answer_id": "UQNe4xvtjJ5jBEUvj4bAdV",
+        "answer_id": "efQZCNHsWDxMhLNmGmrg96",
         "model_id": "LLaVA-3D-7B",
         "metadata": {}
     },
@@ -411,7 +411,7 @@
         "question_id": 220602023105,
         "prompt": "What room can I get clean in that is to my right?",
         "text": "Bathroom.",
-        "answer_id": "mmwcZDE4fDY3cBLzh4xnLE",
+        "answer_id": "Udi9dK8iQqDCBjwd9CKEDQ",
         "model_id": "LLaVA-3D-7B",
         "metadata": {}
     },
@@ -419,7 +419,7 @@
         "question_id": 220602023691,
         "prompt": "What is under the microwave that is on my left?",
         "text": "Kitchen counter.",
-        "answer_id": "6LMZV3sQzhwjLP2nfA58cH",
+        "answer_id": "csHKTcapMMUR82Q7iykUZT",
         "model_id": "LLaVA-3D-7B",
         "metadata": {}
     },
@@ -427,7 +427,7 @@
         "question_id": 220602023954,
         "prompt": "What is the object in front of me counter I can use to toast my bread?",
         "text": "Toaster.",
-        "answer_id": "6bbjetwth8Dv69exmWj2WU",
+        "answer_id": "T6JtVBVpxRJjbpFfjAMs48",
         "model_id": "LLaVA-3D-7B",
         "metadata": {}
     },
@@ -435,7 +435,7 @@
         "question_id": 220602024002,
         "prompt": "What is behind the table that is behind me?",
         "text": "Couch.",
-        "answer_id": "iWBwp4pjdkxKWPd6iDfGPg",
+        "answer_id": "9vckgLDDpkw9ggLXm8kxVW",
         "model_id": "LLaVA-3D-7B",
         "metadata": {}
     },
@@ -443,7 +443,7 @@
         "question_id": 220602024490,
         "prompt": "What way should I tilt my head if I want to lay in bed and watch TV?",
         "text": "Tilt your head to your right to watch your Tv.",
-        "answer_id": "TEicM7ChXQFMw84cDwzkmb",
+        "answer_id": "J5w4GmG58ZFcD25r6H69Me",
         "model_id": "LLaVA-3D-7B",
         "metadata": {}
     },
@@ -451,7 +451,7 @@
         "question_id": 220602024959,
         "prompt": "Which direction should I go to leave the room?",
         "text": "Left.",
-        "answer_id": "Rj5ztPTSaaixm78Mg69LqT",
+        "answer_id": "UywojMsNF7dwLHiNN7THZL",
         "model_id": "LLaVA-3D-7B",
         "metadata": {}
     },
@@ -459,7 +459,7 @@
         "question_id": 220602025068,
         "prompt": "What color is the large object behind me?",
         "text": "White.",
-        "answer_id": "cLxJvSzcx8NM2RCWPA5Ebu",
+        "answer_id": "djiKa76MdLxXD8B9WCuvxM",
         "model_id": "LLaVA-3D-7B",
         "metadata": {}
     },
@@ -467,7 +467,7 @@
         "question_id": 220602025072,
         "prompt": "The TV to my right is recess into what furniture?",
         "text": "Cabinet.",
-        "answer_id": "kRWT8FsUUbhtxAKn589UM7",
+        "answer_id": "SwamaWVBB9QDZ3WiiZA4j8",
         "model_id": "LLaVA-3D-7B",
         "metadata": {}
     },
@@ -475,7 +475,7 @@
         "question_id": 220602026037,
         "prompt": "Is the TV on my left or right?",
         "text": "Left.",
-        "answer_id": "BCMteTVMSQATNcCJGFXHF2",
+        "answer_id": "WnUKLo3Hk4ExKc6eFh7z2S",
         "model_id": "LLaVA-3D-7B",
         "metadata": {}
     },
@@ -483,7 +483,7 @@
         "question_id": 220602026956,
         "prompt": "Is the TV on or off to my right?",
         "text": "Off.",
-        "answer_id": "Qf6HggRgSNBrsd68cfRC8J",
+        "answer_id": "Sk5C3Jxve5aEbffNUYTuJM",
         "model_id": "LLaVA-3D-7B",
         "metadata": {}
     },
@@ -491,7 +491,7 @@
         "question_id": 220602027394,
         "prompt": "How many stools are behind me that are under the table?",
         "text": "4.",
-        "answer_id": "Wp57XQKrHUFGvk4NvVydRf",
+        "answer_id": "YYrWrYJbRaeMfY7CDKMRNj",
         "model_id": "LLaVA-3D-7B",
         "metadata": {}
     },
@@ -499,7 +499,7 @@
         "question_id": 220602027624,
         "prompt": "What is covering the windows to my right?",
         "text": "Curtainsss.",
-        "answer_id": "hPApfNjLTXrnHHhSRPweGa",
+        "answer_id": "RE2DgkDYwVgeNzS6UmuDqt",
         "model_id": "LLaVA-3D-7B",
         "metadata": {}
     },
@@ -507,7 +507,7 @@
         "question_id": 220602027672,
         "prompt": "How many couches are behind?",
         "text": "11.",
-        "answer_id": "7qRnsBpSRbgf8M3Hikf4We",
+        "answer_id": "mBfFybCCQhiVE2Bp6EUcvD",
         "model_id": "LLaVA-3D-7B",
         "metadata": {}
     },
@@ -515,7 +515,7 @@
         "question_id": 220602028999,
         "prompt": "What is behind the bicycle that is on my right?",
         "text": "Curtain.",
-        "answer_id": "GmTqAPh6xLhb3LzXjohktY",
+        "answer_id": "nxeTJvHjoEnrCXU9vY54xR",
         "model_id": "LLaVA-3D-7B",
         "metadata": {}
     },
@@ -523,7 +523,7 @@
         "question_id": 220602029547,
         "prompt": "Am I in the living room?",
         "text": "No.",
-        "answer_id": "a8RDjdn9GuErHqVMag2iw4",
+        "answer_id": "XWCFJMfkuwtQ7qgy65FFZH",
         "model_id": "LLaVA-3D-7B",
         "metadata": {}
     },
@@ -531,7 +531,7 @@
         "question_id": 220602030515,
         "prompt": "What is the large object behind me?",
         "text": "Bed.",
-        "answer_id": "DQoVrHRvPyBqwMLYPBs9QQ",
+        "answer_id": "g2492NeLUsvHWADQPwMEsk",
         "model_id": "LLaVA-3D-7B",
         "metadata": {}
     },
@@ -539,7 +539,7 @@
         "question_id": 220602030583,
         "prompt": "What letter resembles the couch behind me?",
         "text": "L.",
-        "answer_id": "5ihNwDnxRi2Hiw3B9aNFun",
+        "answer_id": "6Jyx4i4ZKZHgbjL4kua6e5",
         "model_id": "LLaVA-3D-7B",
         "metadata": {}
     },
@@ -547,7 +547,7 @@
         "question_id": 220602030846,
         "prompt": "How many window panes does the window in front of me have?",
         "text": "11.",
-        "answer_id": "9sU7Cy9MFNEUDTGrsQXtHS",
+        "answer_id": "FNigHitgR3KarkPJAmouU9",
         "model_id": "LLaVA-3D-7B",
         "metadata": {}
     },
@@ -555,7 +555,7 @@
         "question_id": 220602031474,
         "prompt": "What is the bed sitting on that is on the floor behind me to the left?",
         "text": "Mat.",
-        "answer_id": "GMcMabGRJyWYF7GMdjXWem",
+        "answer_id": "3XZGAaWDiLbrjCSVneRBZG",
         "model_id": "LLaVA-3D-7B",
         "metadata": {}
     },
@@ -563,7 +563,7 @@
         "question_id": 220602031639,
         "prompt": "The TV is located on what TV of furniture to my right?",
         "text": "Cabinet.",
-        "answer_id": "PBpFwpaMXEvvPrhewkwSsE",
+        "answer_id": "NxABm9n6ZRvhzQkdvTS9hj",
         "model_id": "LLaVA-3D-7B",
         "metadata": {}
     },
@@ -571,7 +571,7 @@
         "question_id": 220602031646,
         "prompt": "Is the door behind me closed or open?",
         "text": "Closed.",
-        "answer_id": "7EJzqQSHkzmgzHNLwp8T9T",
+        "answer_id": "TxsFjmSVb7GAVeFRSwgFmP",
         "model_id": "LLaVA-3D-7B",
         "metadata": {}
     }
