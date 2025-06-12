@@ -2,8 +2,8 @@
 
 # ======= ./experiment_runner.sh ========
 # For reproducibility and organizational purposes, this script is to be used for listing the experiments we want to run.
-source ~/.bashrc
-pyenv activate kimivl
+#source ~/.bashrc
+#pyenv activate kimivl
 
 KIMIVL="${PWD%%LLaVA-3D*}/LLaVA-3D/kimivl/"
 
