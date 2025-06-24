@@ -62,7 +62,7 @@ class RGBDVideoProcessor(ProcessorMixin):
         self.tokenizer = tokenizer
         self.num_frames = num_frames
         
-        with open('/root/SceneUnderstanding/LLaVA-3D/playground/data/annotations/embodiedscan_infos.json', 'r') as file: # NOTE: for generalization, this is a symlink to a file set from a script.
+        with open('/data/SceneUnderstanding/SU_cursor/LLaVA-3D/playground/data/annotations/embodiedscan_infos.json', 'r') as file: # NOTE: for generalization, this is a symlink to a file set from a script.
             self.scene = json.load(file)
 
     def valid_pose(self, video_poses):
@@ -395,6 +395,8 @@ class RGBDVideoProcessor(ProcessorMixin):
         images = []
         depth_images = []
         poses = []
+
+        #breakpoint() # CHECK: are the images, depths, poses, intrinsics, axis_align_matrix loaded correctly?
 
         if 'depth_intrinsic_file' in video_info:
             depth_intrinsic = video_info['depth_intrinsic_file']

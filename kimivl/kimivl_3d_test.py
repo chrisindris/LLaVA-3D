@@ -221,7 +221,7 @@ def kimivl_video_test(
         {
             "role": "user",
             "content": [
-                {"type": "image", "image": img} for img in images
+                {"type": "image", "image": img} for img in images # "content" = [image 1: {"type": "image", "image": img}, image 2: {"type": "image", "image": img}, ...]
             ] + [{"type": "text", "text": text_prompt}]
         }
     ]
@@ -247,7 +247,7 @@ def kimivl_video_test(
             temperature=0.7,
             top_p=0.9,
             repetition_penalty=1.2,
-            num_beams=2
+            num_beams=1
         )
         generated_ids_trimmed = [
             out_ids[len(in_ids):] for in_ids, out_ids in zip(inputs.input_ids, generated_ids)
