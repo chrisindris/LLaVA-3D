@@ -178,7 +178,7 @@ def add_answers_to_questions(questions: list, answer_file: str, num_chunks: int,
     with open(answer_file, "r") as f:
         answers = json.load(f)
         answers = get_chunk(answers, num_chunks, chunk_idx)
-        answers = answers[2:3] # [answers[0]] # [:]  # [:] to control how many get used, e.g. [answers[0]] for only the first answer. If we want answers to agree, we can add to a new "answers" in "if qid in answer_lookup"
+        answers = answers # [answers[0]] # [:]  # [:] to control how many get used, e.g. [answers[0]] for only the first answer. If we want answers to agree, we can add to a new "answers" in "if qid in answer_lookup"
     f.close()
         
     # Build a lookup dict for answers by question_id
@@ -575,6 +575,9 @@ if __name__ == "__main__":
     parser.add_argument("--chunk_idx", type=int, default=0)
     parser.add_argument("--batch_size", type=int, default=4)
     args = parser.parse_args()
+    
+    # TODO: make it skip questions that already have answers in the export_json
+    # TODO: make export_json a list, not just a dict on each line
     
     print(args)
     
