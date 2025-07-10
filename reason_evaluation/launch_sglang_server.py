@@ -5,8 +5,7 @@ if is_in_ci():
 else:
     from sglang.utils import launch_server_cmd
 
-from sglang.utils import wait_for_server, print_highlight, terminate_process
-
+from sglang.utils import wait_for_server
 vision_process, port = launch_server_cmd(
     """
 python3 -m sglang.launch_server --model-path Qwen/Qwen2.5-VL-7B-Instruct

@@ -22,7 +22,7 @@ bash scripts/eval/sqa3d_distributed.sh
 # NOTE:
 - The generated files from QWen can be problematic for JSON output format.
 - Convert script cannot always conver all json entries due to the inconsistent format of the generated files by QWen.
-- Please modify qwen2.5vl_3d_test.py file for enabling sglang inference with port setting to satisfy the serving condition of the model.
+- Please modify qwen2.5vl_3d_test.py file for enabling sglang or vllm inference with port setting to satisfy the serving condition of the model.
 - There are still maximum token limitation of the input sequence which blocks the usage of all image sequences.
 - Using following command to launch a SGLang server.
 ```bash

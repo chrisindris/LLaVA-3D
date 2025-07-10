@@ -4,6 +4,14 @@ import os
 import torch
 import json
 import gc
+from typing import Literal, NamedTuple, Optional, TYPE_CHECKING
+from dataclasses import asdict
+from vllm.multimodal.utils import fetch_image
+
+if TYPE_CHECKING:
+    from vllm import EngineArgs
+    from vllm.lora.request import LoRARequest
+    from PIL import Image
 
 
 def load_images(folder_path: str):
@@ -58,6 +66,59 @@ def add_answers_to_questions(questions: list, answer_str: str):
     return questions
 
 
+def save_output(output_text: str, question: dict, output_file_path: str):
+    # Parse the output text to extract the reasoning and answer
+    # This is a placeholder implementation. You may need to adjust it based on the actual output format.
+    try:
+        print(output_text)
+        output_json = json.loads(output_text)
+        reasoning = output_json.get("reason", "")
+        answer = output_json.get("answer", "")
+        # append this new json enry to the output file
+        with open(output_file_path, "a") as f:
+            if question is not None:
+                json.dump(
+                    {
+                        "reason": reasoning,
+                        "text": answer,
+                        "question_id": question["question_id"],
+                        "scene_name": question["video"],
+                        "prompt": question["text"],
+                    },
+                    f,
+                    indent=4,
+                    ensure_ascii=False,
+                )
+                f.write("\n")
+            else:
+                json.dump(
+                    {
+                        "reason": reasoning,
+                        "text": answer,
+                    },
+                    f,
+                    indent=4,
+                    ensure_ascii=False,
+                )
+                f.write("\n")
+    except json.JSONDecodeError:
+        print(f"Failed to parse output: {output_text}")
+        with open(output_file_path, "a") as f:
+            json.dump(
+                {
+                    "reason": "Failed to parse",
+                    "text": output_text,
+                    "question_id": question["question_id"],
+                    "scene_name": question["video"],
+                    "prompt": question["text"],
+                },
+                f,
+                indent=4,
+                ensure_ascii=False,
+            )
+            f.write("\n")
+
+
 def find_image_paths(questions: list, folder_path: str, sample_rate: int = 1):
     """
     Find image paths in questions.
@@ -90,7 +151,7 @@ def find_image_paths(questions: list, folder_path: str, sample_rate: int = 1):
 # You can set the maximum tokens for a video through the environment variable VIDEO_MAX_PIXELS
 # based on the maximum tokens that the model can accept.
 # export VIDEO_MAX_PIXELS = 32000 * 28 * 28 * 0.9
-def qwen_video_test(
+def hf_qwen_video_test(
     image_paths: list, text_prompt: str, model_path: str, device: str = "cuda:2"
 ):
     # You can directly insert a local file path, a URL, or a base64-encoded image into the position where you want in the text.
@@ -305,76 +366,154 @@ def sglang_qwen_video_test(
     return final_json_output.model_dump_json()
 
 
-def save_output(output_text: str, question: dict, output_file_path: str):
-    # Parse the output text to extract the reasoning and answer
-    # This is a placeholder implementation. You may need to adjust it based on the actual output format.
+class ModelRequestData(NamedTuple):
+    engine_args: "EngineArgs"
+    prompt: str
+    image_data: list["Image.Image"]
+    stop_token_ids: Optional[list[int]] = None
+    chat_template: Optional[str] = None
+    lora_requests: Optional[list["LoRARequest"]] = None
+
+
+def load_qwen2_5_vl(
+    model_name: str, question: str, image_paths: list[str], device_nums: int = 1
+) -> ModelRequestData:
     try:
-        print(output_text)
-        output_json = json.loads(output_text)
-        reasoning = output_json.get("reason", "")
-        answer = output_json.get("answer", "")
-        # append this new json enry to the output file
-        with open(output_file_path, "a") as f:
-            if question is not None:
-                json.dump(
-                    {
-                        "reason": reasoning,
-                        "text": answer,
-                        "question_id": question["question_id"],
-                        "scene_name": question["video"],
-                        "prompt": question["text"],
-                    },
-                    f,
-                    indent=4,
-                    ensure_ascii=False,
-                )
-                f.write("\n")
-            else:
-                json.dump(
-                    {
-                        "reason": reasoning,
-                        "text": answer,
-                    },
-                    f,
-                    indent=4,
-                    ensure_ascii=False,
-                )
-                f.write("\n")
-    except json.JSONDecodeError:
-        print(f"Failed to parse output: {output_text}")
-        with open(output_file_path, "a") as f:
-            json.dump(
-                {
-                    "reason": "Failed to parse",
-                    "text": output_text,
-                    "question_id": question["question_id"],
-                    "scene_name": question["video"],
-                    "prompt": question["text"],
-                },
-                f,
-                indent=4,
-                ensure_ascii=False,
+        from qwen_vl_utils import smart_resize
+    except ModuleNotFoundError:
+        print(
+            "WARNING: `qwen-vl-utils` not installed, input images will not "
+            "be automatically resized. You can enable this functionality by "
+            "`pip install qwen-vl-utils`."
+        )
+        smart_resize = None
+
+    # Set a fixed number of tokens per image.
+    tokens_per_image = 128
+    patch_size = 28 * 28
+    max_pixels = tokens_per_image * patch_size
+
+    # Calculate the required model length.
+    num_images = len(image_paths)
+    total_image_tokens = num_images * tokens_per_image
+
+    # Add a buffer for the text prompt and generated output.
+    text_and_generation_buffer = 1024
+    calculated_max_model_len = total_image_tokens + text_and_generation_buffer
+
+    # The context window of the model
+    model_absolute_max_len = 32768
+
+    if calculated_max_model_len > model_absolute_max_len:
+        print(
+            f"WARNING: The number of images ({num_images}) results in a required context "
+            f"length ({calculated_max_model_len}) that exceeds the model's maximum "
+            f"({model_absolute_max_len}). The model may not be able to process all images."
+        )
+        # reduce the number of images to the maximum number of images that can be processed by the model
+        num_images = (
+            model_absolute_max_len - text_and_generation_buffer
+        ) // tokens_per_image
+        final_max_model_len = model_absolute_max_len
+    else:
+        final_max_model_len = calculated_max_model_len
+
+    engine_args = EngineArgs(
+        model=model_name,
+        tensor_parallel_size=device_nums,
+        max_model_len=final_max_model_len,
+        max_num_seqs=5,
+        limit_mm_per_prompt={"image": num_images},
+    )
+
+    # Update image paths to the number of images that can be processed by the model
+    # get num_images images uniformly from whole image_paths
+    if num_images < len(image_paths):
+        # Uniformly sample num_images from the original list
+        step = len(image_paths) / num_images
+        indices = [int(i * step) for i in range(num_images)]
+        used_image_paths = [image_paths[i] for i in indices]
+    else:
+        used_image_paths = image_paths
+
+    placeholders = [{"type": "image", "image": path} for path in used_image_paths]
+    messages = [
+        {"role": "system", "content": "You are a helpful assistant."},
+        {
+            "role": "user",
+            "content": [
+                *placeholders,
+                {"type": "text", "text": question},
+            ],
+        },
+    ]
+
+    processor = AutoProcessor.from_pretrained(model_name)
+    prompt = processor.apply_chat_template(
+        messages, tokenize=False, add_generation_prompt=True
+    )
+
+    def get_image(path: str) -> Image.Image:
+        return Image.open(path).convert("RGB")
+
+    if smart_resize is None:
+        print(
+            "WARNING: `smart_resize` not available. Images will not be resized, which may lead to errors."
+        )
+        image_data = [get_image(path) for path in used_image_paths]
+    else:
+
+        def post_process_image(image: Image.Image) -> Image.Image:
+            width, height = image.size
+            resized_height, resized_width = smart_resize(
+                height, width, max_pixels=max_pixels
             )
-            f.write("\n")
+            return image.resize((resized_width, resized_height))
+
+        image_data = [post_process_image(get_image(path)) for path in used_image_paths]
+
+    return ModelRequestData(
+        engine_args=engine_args,
+        prompt=prompt,
+        image_data=image_data,
+    )
 
 
-def detect_repeated_questions(questions: list) -> bool:
+def vllm_qwen_video_test(
+    image_paths: list, text_prompt: str, model_path: str, device_nums: int = 1
+):
     """
-    Detect repeated questions in the list of questions.
-    Args:
-        questions (list): List of questions.
-    Returns:
-        list: List of repeated questions.
+    Run Qwen2.5-VL model using VLLM for multiple image paths to generate output.
     """
-    seen_questions = set()
-    repeated_questions = []
-    for question in questions:
-        question_id = question["question_id"]
-        if question_id in seen_questions:
-            repeated_questions.append(question)
-        else:
-            seen_questions.add(question_id)
-    return len(repeated_questions) > 0
+
+    class Answer(BaseModel):
+        reason: str = Field(..., description="reason")
+        answer: str = Field(..., description="answer")
+
+    json_schema = Answer.model_json_schema()
+    guided_decoding_params_json = GuidedDecodingParams(json=json_schema)
+    req_data = load_qwen2_5_vl(model_path, text_prompt, image_paths, device_nums)
+
+    sampling_params = SamplingParams(
+        temperature=0.0,
+        max_tokens=256,
+        stop_token_ids=req_data.stop_token_ids,
+        guided_decoding=guided_decoding_params_json,
+    )
+    llm = LLM(**asdict(req_data.engine_args))
+
+    outputs = llm.generate(
+        {
+            "prompt": req_data.prompt,
+            "multi_modal_data": {"image": req_data.image_data},
+        },
+        sampling_params=sampling_params,
+        lora_request=req_data.lora_requests,
+    )
+
+    final_output = Answer.model_validate_json(outputs[0].outputs[0].text)
+
+    return final_output.model_dump_json()
 
 
 def main(
@@ -383,7 +522,7 @@ def main(
     image_folder_path: str,
     export_json_path: str,
     model_path: str,
-    use_sglang: bool = False,
+    inference_type: Literal["qwen", "sglang", "vllm"] = "qwen",
     port: int = 30000,
 ):
     # Load questions from a JSON file
@@ -391,7 +530,7 @@ def main(
     # Load answers from a JSON file
     questions = add_answers_to_questions(questions, answer_file_path)
     # Find image paths in questions
-    sample_rate = 5 if use_sglang else 5
+    sample_rate = 10
     questions = find_image_paths(questions, image_folder_path, sample_rate)
 
     for question in questions:
@@ -405,20 +544,25 @@ def main(
             + " Please reason step by step, and give your reason and answer in the json format with field reason and answer."
         )
         # Run the Qwen video test
-        output_text = (
-            qwen_video_test(image_paths, text_prompt, model_path)
-            if not use_sglang
-            else sglang_qwen_video_test(image_paths, text_prompt, model_path, port)
-        )
+        if inference_type == "hf":
+            output_text = hf_qwen_video_test(image_paths, text_prompt, model_path)
+            output = parse_json(output_text[0])
+        elif inference_type == "sglang":
+            output_text = sglang_qwen_video_test(
+                image_paths, text_prompt, model_path, port
+            )
+            output = output_text
+        elif inference_type == "vllm":
+            output_text = vllm_qwen_video_test(
+                image_paths, text_prompt, model_path, device_nums=1
+            )
+            output = output_text
+        else:
+            raise ValueError(
+                "Invalid inference type. Choose from 'hf', 'sglang', or 'vllm'."
+            )
 
-        output = output_text if use_sglang else parse_json(output_text[0])
         save_output(output, question, export_json_path)
-
-    # Load images from a folder
-    # regular_images, _ = load_images(image_folder_path)
-    # text_prompt = "Tell me the only object that I could see from the other room and describe the object. Please reason step by step, and give your reason and answer in the json format with field reason and answer."
-    # output_text = qwen_video_test(regular_images, text_prompt, model_path)
-    # save_output(output_text[0], None, export_json_path)
 
 
 if __name__ == "__main__":
@@ -427,22 +571,32 @@ if __name__ == "__main__":
     answer_file_path = "/data/SceneUnderstanding/7792397/ScanQA_format/SQA_em1-below-35_formatted_LLaVa3d_answers.json"
     model_path = "Qwen/Qwen2.5-VL-7B-Instruct"
     image_folder_path = "/data/SceneUnderstanding/ScanNet/scans"
-    # image_folder_path = "/root/research_projects/LLaVA-3D/demo/scannet/posed_images/scene0356_00/"
-    export_path = "./qwen2.5vl_3d_test_results.json"
+    export_path = "./qwen2.5vl_3d_test_results_vllm.json"
     port = 30000
-    use_sglang = True
-    if use_sglang:
+    inference_type = "vllm"  # Choose from 'qwen', 'sglang', or 'vllm'
+    if inference_type == "sglang":
         from openai import OpenAI
         from pydantic import BaseModel, Field
-    else:
+    elif inference_type == "hf":
         from transformers import Qwen2_5_VLForConditionalGeneration, AutoProcessor
         from qwen_vl_utils import process_vision_info
+    elif inference_type == "vllm":
+        from vllm import LLM, SamplingParams, EngineArgs
+        from vllm.sampling_params import GuidedDecodingParams
+        from pydantic import BaseModel, Field
+        from PIL import Image
+        from transformers import AutoProcessor
+    else:
+        raise ValueError(
+            "Invalid inference type. Choose from 'hf', 'sglang', or 'vllm'."
+        )
+
     main(
         question_file_path,
         answer_file_path,
         image_folder_path,
         export_path,
         model_path,
-        use_sglang,
+        inference_type,
         port,
     )
