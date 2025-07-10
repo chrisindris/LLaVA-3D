@@ -9,7 +9,7 @@ from typing import List, Dict, Any
 import math
 import accelerate
 
-#import pdb
+import pdb
 
 # Create accelerator config for memory optimization
 accelerator_config = {
@@ -242,9 +242,13 @@ def get_data(image_folder_path: str, scene: str, data_type: str = "rgb", sample_
         raise ValueError(f"Invalid image type: {data_type}")
         
     data_dir = os.path.join(image_folder_path, scene, scene + "_sens", style["dir"])
-    data = [i for i in os.listdir(data_dir) if i.endswith(style["ext"])][::sample_rate]
-    assert [int(i.split(".")[0]) for i in data] == list(range(0, len(data) * sample_rate, sample_rate)), "Images are not in order"
-    data = [os.path.join(data_dir, image) for image in data]
+    #data = [i for i in os.listdir(data_dir) if i.endswith(style["ext"])][::sample_rate]
+    #breakpoint()
+    #assert [int(i.split(".")[0]) for i in data] == list(range(0, len(data) * sample_rate, sample_rate)), "Images are not in order"
+    data = [i for i in os.listdir(data_dir) if i.endswith(style["ext"])]
+    images_to_use = [str(idx) + ".jpg" for idx in list(range(0, len(data), sample_rate))]
+    data = [os.path.join(data_dir, image) for image in images_to_use]
+    #breakpoint()
     return data
 
 
@@ -492,8 +496,8 @@ def main(
         device_map="auto" if device == "cuda" else {"": device},  # Force model to specific GPU, unless device is "cuda"
         trust_remote_code=True,
         attn_implementation="flash_attention_2",  # Enable Flash Attention 2
-        offload_folder="offload", # offload to disk if needed
-        offload_state_dict=True # offload state dict to CPU during loading
+        offload_folder="offload", # offload to disk if needed to save memory
+        offload_state_dict=True # offload state dict to CPU during loading to save memory
     )
     
     # Enable memory-efficient attention if available
@@ -538,7 +542,7 @@ def main(
                 )
                 break
             except torch.cuda.OutOfMemoryError:
-                print("torch.cuda.OutOfMemoryError with batch size: ", progressive_batch_size, "trying again with batch size: ", progressive_batch_size // 2)
+                print("torch.cuda.OutOfMemoryError with batch size: ", progressive_batch_size, "trying again with batch size: ", progressive_batch_size - 1)
                 # Clear memory
                 gc.collect()
                 torch.cuda.empty_cache()
@@ -546,7 +550,7 @@ def main(
                     model.clear_cache()
                 clear_model_caches(model)
                 # Try again with a smaller batch size
-                progressive_batch_size = progressive_batch_size // 2
+                progressive_batch_size = progressive_batch_size - 1
                 if progressive_batch_size < 1:
                     raise ValueError("Batch size is too small. Skipping question.")
                 
