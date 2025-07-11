@@ -457,6 +457,46 @@ def save_output(output_text: str, question: dict, output_file_path: str):
     with open(output_file_path, "a") as f:
         json.dump(output_dict, f)
         f.write("\n")
+        
+        
+def save_output_json(output_text: str, question: dict, output_file_path: str):
+    """
+    Save the model's output to a file.
+    Args:
+        traces (list): List of traces already existing
+        output_text (str): Model's output text
+        question (dict): Question dictionary
+        output_file_path (str): Path to save the output
+    """
+    # Extract the answer from the output text
+    # This is a simple implementation - you may need to adjust based on actual output format
+    answer = output_text.strip()
+    
+    # Create output dictionary
+    output_dict = {
+        "question_id": question.get("question_id", ""),
+        "video": question.get("video", ""),
+        "question": question.get("question", ""),
+        "answer": answer,
+        "type": question.get("type", "")
+    }
+    
+    # get a list of the existing traces; if no traces yet, make an empty list.
+    try:
+        with open(output_file_path, "r") as f:
+            traces = json.load(f)
+        f.close()
+    except FileNotFoundError:
+        traces = []
+        
+    # add the new trace to the list
+    traces.append(output_dict)
+    
+    # Save to file
+    with open(output_file_path, "w") as f:
+        json.dump(traces, f, indent=4)
+    f.close()
+        
 
 def main(
     question_file_path: str,
@@ -508,11 +548,23 @@ def main(
     processor = AutoProcessor.from_pretrained(model_path, trust_remote_code=True)
     
     # Create output file
-    with open(export_json_path, "w") as f:
-        pass
+    # with open(export_json_path, "w") as f:
+    #     pass
+    
+    # open the existing json file, if it exists, and make a list from it. This is so we can skip questions that already have answers.
+    try:
+        with open(export_json_path, "r") as f:
+            traces = json.load(f)
+        f.close()
+    except FileNotFoundError:
+        traces = []
     
     # Process each question
     for question in questions:
+        if question["question_id"] in [trace["question_id"] for trace in traces]:
+            print(f"Question {question['question_id']} already has an answer. Skipping.")
+            continue
+        
         text_prompt = question["text"]
         images_list = get_data(image_folder_path, question["video"], data_type="rgb", sample_rate=sample_rate)
         #depths_list = get_data(image_folder_path, question["video"], data_type="depth", sample_rate=sample_rate) # TODO: Implement depth processing if needed
@@ -562,7 +614,7 @@ def main(
         torch.cuda.empty_cache()
         
         # Save output
-        save_output(output_text, question, export_json_path)
+        save_output_json(output_text, question, export_json_path)
 
 if __name__ == "__main__":
     import argparse
