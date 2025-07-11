@@ -62,11 +62,6 @@ build = [
   "build",
   "twine"
 ]
-kimivl = [
-  "transformers",
-  "tiktoken",
-  "blobfile"
-]
 
 
 [tool.setuptools.packages.find]
