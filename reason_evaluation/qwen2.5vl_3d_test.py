@@ -553,8 +553,12 @@ def main(
             )
             output = output_text
         elif inference_type == "vllm":
+            # from os environ CUDA_VISIBLE_DEVICES get available cuda nums. If not set, use 1
+            device_nums = int(
+                os.environ.get("CUDA_VISIBLE_DEVICES", "1").count(",") + 1
+            )
             output_text = vllm_qwen_video_test(
-                image_paths, text_prompt, model_path, device_nums=1
+                image_paths, text_prompt, model_path, device_nums=device_nums
             )
             output = output_text
         else:
