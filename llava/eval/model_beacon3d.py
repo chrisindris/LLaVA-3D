@@ -55,10 +55,11 @@ def eval_model(args):
     ans_list = [] # a list of dictionaries, to be written after to the file
 
     for line in tqdm(questions): # The key info for the questions file
+        #breakpoint()
         idx = line["question_id"]
-        video_file = line["video"]
+        video_file = line["scene_id"]
         video_path = os.path.join(args.video_folder, video_file)
-        qs = line["text"]
+        qs = line["question"]
         cur_prompt = qs
         if model.config.mm_use_im_start_end:
             qs = DEFAULT_IM_START_TOKEN + DEFAULT_IMAGE_TOKEN + DEFAULT_IM_END_TOKEN + '\n' + qs
@@ -124,6 +125,7 @@ def eval_model(args):
 
         ans_id = shortuuid.uuid()
         ans_list.append({"question_id": idx,
+                         "scene_id": video_file,
                          "prompt": cur_prompt,
                          "text": outputs,
                          "answer_id": ans_id,
