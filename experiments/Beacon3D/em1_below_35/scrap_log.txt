@@ -1,0 +1,12 @@
+/data/SceneUnderstanding/SU_cursor/LLaVA-3D//experiments/Beacon3D/em1_below_35/scrap_processed.json already exists
+Finish processing inference results: EM = 57.47 | EM-R = 62.07 | GPT-Score = 62.64
+
+Scores:
+case: 62.64
+object: 24.14
+
+class: 58.33
+appearance: 72.41
+geometry: 50.00
+spatial: 50.00
+existence: 75.00

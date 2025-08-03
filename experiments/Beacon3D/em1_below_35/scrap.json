@@ -4,7 +4,7 @@
         "scene_id": "scene0025_00",
         "prompt": "What color is the largest box?",
         "text": "Brown.",
-        "answer_id": "e3ZSyKcYdSBTxLdgnDpbcf",
+        "answer_id": "QU3Fqnbwb6bPHCzfQqi6cq",
         "model_id": "LLaVA-3D-7B",
         "metadata": {}
     },
@@ -13,7 +13,7 @@
         "scene_id": "scene0025_00",
         "prompt": "Is the largest box close to the door?",
         "text": "Yes.",
-        "answer_id": "A2QufsFVijvuswHPkfWbsL",
+        "answer_id": "aZ6BFQ4LjguAxU6ZgZsXVw",
         "model_id": "LLaVA-3D-7B",
         "metadata": {}
     },
@@ -22,7 +22,7 @@
         "scene_id": "scene0025_00",
         "prompt": "Consider the white box on the desk, is it larger or smaller than the other box nearby?",
         "text": "Smaller.",
-        "answer_id": "D67Rb9CSmZMGXpXNqdNNea",
+        "answer_id": "bG4h9idG65b8eES3Vebw7v",
         "model_id": "LLaVA-3D-7B",
         "metadata": {}
     },
@@ -30,8 +30,8 @@
         "question_id": "scene0025_00_29_0_appearance_0",
         "scene_id": "scene0025_00",
         "prompt": "What color is the box between monitors?",
-        "text": "Blue.",
-        "answer_id": "9Yyqb3zhmWkqaHMMEoT7Uj",
+        "text": "White.",
+        "answer_id": "k5XG5M5RMugCozNAfhuwsF",
         "model_id": "LLaVA-3D-7B",
         "metadata": {}
     },
@@ -40,7 +40,7 @@
         "scene_id": "scene0025_00",
         "prompt": "Is the black box smaller or larger than the white box?",
         "text": "Smaller.",
-        "answer_id": "3n6Ehgkdtgue2Pm3PoFyuQ",
+        "answer_id": "6Qh5evsqqPzkefX7yYjHcK",
         "model_id": "LLaVA-3D-7B",
         "metadata": {}
     },
@@ -49,7 +49,7 @@
         "scene_id": "scene0025_00",
         "prompt": "Is the black box far from the telephone?",
         "text": "No.",
-        "answer_id": "QKTx8dcwGMwbgwBUzLkGbp",
+        "answer_id": "dtCEVWrDPnm6HxWUVe8aHw",
         "model_id": "LLaVA-3D-7B",
         "metadata": {}
     },
@@ -57,8 +57,8 @@
         "question_id": "scene0025_00_34_0_existence_1",
         "scene_id": "scene0025_00",
         "prompt": "Is there a book next to the white keyboard?",
-        "text": "Yes, there is.",
-        "answer_id": "Bda5R6WsLhB98NuVw6xWxL",
+        "text": "Yes.",
+        "answer_id": "ceVuJHatSm7XKHfDLF2qL5",
         "model_id": "LLaVA-3D-7B",
         "metadata": {}
     },
@@ -67,7 +67,7 @@
         "scene_id": "scene0025_00",
         "prompt": "What color is the keyboard close to paper towel roll?",
         "text": "Black.",
-        "answer_id": "cSBHNfdKvzKvLFBz8TCWTA",
+        "answer_id": "6B6LaL8KMPyRo5J8XgxPi5",
         "model_id": "LLaVA-3D-7B",
         "metadata": {}
     },
@@ -75,8 +75,8 @@
         "question_id": "scene0025_00_34_2_spatial_1",
         "scene_id": "scene0025_00",
         "prompt": "Is the white keyboard near the door?",
-        "text": "Yes.",
-        "answer_id": "96Nv8LQuwFSckDb6aRS5vi",
+        "text": "No.",
+        "answer_id": "kEjSn857zdWq2nJk2VRxbf",
         "model_id": "LLaVA-3D-7B",
         "metadata": {}
     },
@@ -85,7 +85,7 @@
         "scene_id": "scene0025_00",
         "prompt": "Is there a pillow next to the black keyboard?",
         "text": "Yes.",
-        "answer_id": "KbDWcjRjkCdwcMTxT4pf8m",
+        "answer_id": "Z3atzzB9tFzt2dYMnF6i5D",
         "model_id": "LLaVA-3D-7B",
         "metadata": {}
     },
@@ -94,7 +94,7 @@
         "scene_id": "scene0025_00",
         "prompt": "What color is the keyboard farther from the blinds?",
         "text": "Black.",
-        "answer_id": "ewoXQTgZQjwJZkoB6bribx",
+        "answer_id": "SYiftoEUqbngR9qMftq6Uy",
         "model_id": "LLaVA-3D-7B",
         "metadata": {}
     },
@@ -103,7 +103,7 @@
         "scene_id": "scene0025_00",
         "prompt": "Is the black keyboard close to the paper towel roll?",
         "text": "Yes.",
-        "answer_id": "LqTDjeiepmCfhJ4QpTiycK",
+        "answer_id": "bqFvqvt3TifQSUe7jgXrHf",
         "model_id": "LLaVA-3D-7B",
         "metadata": {}
     },
@@ -111,8 +111,8 @@
         "question_id": "scene0025_00_9_0_appearance_1",
         "scene_id": "scene0025_00",
         "prompt": "What color is the desk that holds two monitors?",
-        "text": "White.",
-        "answer_id": "NmRsS3QwfYh5e6NTPzbX5Z",
+        "text": "Brown.",
+        "answer_id": "h3BY7q3EzQsezQVuqwqX8h",
         "model_id": "LLaVA-3D-7B",
         "metadata": {}
     },
@@ -121,7 +121,7 @@
         "scene_id": "scene0025_00",
         "prompt": "Look at the desk that holds two monitors, is it smaller or larger than the other desk?",
         "text": "Smaller.",
-        "answer_id": "ZtHR6qTeiKKXKk7Kpy7EpZ",
+        "answer_id": "2sYDX3ik8y6wM6sp3TfmHz",
         "model_id": "LLaVA-3D-7B",
         "metadata": {}
     },
@@ -129,8 +129,8 @@
         "question_id": "scene0025_00_9_2_existence_1",
         "scene_id": "scene0025_00",
         "prompt": "Is there a door next to the smaller desk?",
-        "text": "Yes, there is.",
-        "answer_id": "KCeaW35gRLBHi9QGZf9HBt",
+        "text": "Yes.",
+        "answer_id": "7eepFyTMPehfJBZa9adPwx",
         "model_id": "LLaVA-3D-7B",
         "metadata": {}
     },
@@ -139,7 +139,7 @@
         "scene_id": "scene0025_00",
         "prompt": "What color is the longest desk?",
         "text": "White.",
-        "answer_id": "azwfSW4HrXU7fQ4xYyNqd6",
+        "answer_id": "nXRGcocU5GzCzn355NiJo8",
         "model_id": "LLaVA-3D-7B",
         "metadata": {}
     },
@@ -148,7 +148,7 @@
         "scene_id": "scene0025_00",
         "prompt": "Is there any box on the longest desk?",
         "text": "Yes.",
-        "answer_id": "3jWny7FEAYD2rGJHayb3Ci",
+        "answer_id": "MUnqZDG5iEARBHPrf3jSJh",
         "model_id": "LLaVA-3D-7B",
         "metadata": {}
     },
@@ -157,7 +157,7 @@
         "scene_id": "scene0025_00",
         "prompt": "Look at the desk with boxes on it, is it longer or shorter than the other desk?",
         "text": "Shorter.",
-        "answer_id": "WaEcyYciDkwbP3v4TZYSJi",
+        "answer_id": "ddpwoxJcnDGt3zXJYx6fxX",
         "model_id": "LLaVA-3D-7B",
         "metadata": {}
     },
@@ -166,7 +166,7 @@
         "scene_id": "scene0025_00",
         "prompt": "What color is the blinds above the windowsill?",
         "text": "White.",
-        "answer_id": "cSqjvyUphsLnfh7EN9oMMm",
+        "answer_id": "jH8RqN7yGzVyq6btwbmCvo",
         "model_id": "LLaVA-3D-7B",
         "metadata": {}
     },
@@ -174,8 +174,8 @@
         "question_id": "scene0025_00_23_1_spatial_1",
         "scene_id": "scene0025_00",
         "prompt": "Is the white blinds close to the tall shelf?",
-        "text": "Yes.",
-        "answer_id": "XjhXwviyfviDqTkSab9uHu",
+        "text": "Yes, the white blinds are close",
+        "answer_id": "LbPEdzvQeguvdisXeGR4rK",
         "model_id": "LLaVA-3D-7B",
         "metadata": {}
     },
@@ -184,7 +184,7 @@
         "scene_id": "scene0025_00",
         "prompt": "Is there a door opposite the white blinds?",
         "text": "Yes.",
-        "answer_id": "5TgtCUhG6aeP3DVkmYVR7o",
+        "answer_id": "YEfx7vuPBkyoeH4iKehRHG",
         "model_id": "LLaVA-3D-7B",
         "metadata": {}
     },
@@ -193,7 +193,7 @@
         "scene_id": "scene0025_00",
         "prompt": "What color is 'the file cabinet under the small whiteboard'?",
         "text": "White.",
-        "answer_id": "ec5f2xBNVtazJrhrfwEDWN",
+        "answer_id": "RjPBY5wzbF6SBjP7fhjaFq",
         "model_id": "LLaVA-3D-7B",
         "metadata": {}
     },
@@ -202,7 +202,7 @@
         "scene_id": "scene0025_00",
         "prompt": "Is 'the file cabinet in front of the large shelf' near the window?",
         "text": "Yes.",
-        "answer_id": "oTLVhXoys8NqcoS2SCANbK",
+        "answer_id": "7sYpNczzmuAQdQNEnEFuxg",
         "model_id": "LLaVA-3D-7B",
         "metadata": {}
     },
@@ -211,7 +211,7 @@
         "scene_id": "scene0025_00",
         "prompt": "What is above 'the file cabinet in front of the large shelf'?",
         "text": "Whiteboard.",
-        "answer_id": "6g5AY7NTmKG2ztBfZBZ9EA",
+        "answer_id": "6YLURKotDzg99jn8vXQUct",
         "model_id": "LLaVA-3D-7B",
         "metadata": {}
     },
@@ -220,7 +220,7 @@
         "scene_id": "scene0025_00",
         "prompt": "What color is 'the cabinet under the big whiteboard'?",
         "text": "White.",
-        "answer_id": "btQcxWNPoAJofay9vfmRem",
+        "answer_id": "HxSNx2aQg42tkxFxL3aq4Y",
         "model_id": "LLaVA-3D-7B",
         "metadata": {}
     },
@@ -229,7 +229,7 @@
         "scene_id": "scene0025_00",
         "prompt": "Is 'the cabinet opposite the small whiteboard' next to the couch?",
         "text": "Yes.",
-        "answer_id": "RtteSzypMrBW2LPwxJM2E4",
+        "answer_id": "Y5NeFx7sa6q6AVQwoAYxcj",
         "model_id": "LLaVA-3D-7B",
         "metadata": {}
     },
@@ -237,8 +237,8 @@
         "question_id": "scene0025_00_15_2_class_0",
         "scene_id": "scene0025_00",
         "prompt": "What is above 'the cabinet closest to the pillow'?",
-        "text": "Shelf.",
-        "answer_id": "Aat6o92dCCdtPyzU5DX4Q8",
+        "text": "Whiteboard.",
+        "answer_id": "SkeMV6ZokmzGkCwZVWkJLY",
         "model_id": "LLaVA-3D-7B",
         "metadata": {}
     },
@@ -246,8 +246,8 @@
         "question_id": "scene0025_00_17_0_appearance_1",
         "scene_id": "scene0025_00",
         "prompt": "Is 'the file cabinet under the big desk' black?",
-        "text": "No.",
-        "answer_id": "itpvcmQRoys3bwv9FDnSeU",
+        "text": "No, it is white.",
+        "answer_id": "XBGTE8GQvHnGUFgZmnvxJW",
         "model_id": "LLaVA-3D-7B",
         "metadata": {}
     },
@@ -255,8 +255,8 @@
         "question_id": "scene0025_00_17_1_class_0",
         "scene_id": "scene0025_00",
         "prompt": "What is the small object beside 'the file cabinet under the big desk'?",
-        "text": "Bin.",
-        "answer_id": "ApaAhF765y3rn32DWaLpv2",
+        "text": "File cabinet.",
+        "answer_id": "ahYFVhsuACXoZ2pJGFAAYY",
         "model_id": "LLaVA-3D-7B",
         "metadata": {}
     },
@@ -264,8 +264,8 @@
         "question_id": "scene0025_00_17_2_geometry_0",
         "scene_id": "scene0025_00",
         "prompt": "Is 'the file cabinet closest to the white trash can' taller than the desk?",
-        "text": "No, the file cabinet is shorter than",
-        "answer_id": "KhLS2g42GpH6yF2iDfzh7J",
+        "text": "No.",
+        "answer_id": "gKxYhf4EewPTZrKjssNBxc",
         "model_id": "LLaVA-3D-7B",
         "metadata": {}
     },
@@ -274,7 +274,7 @@
         "scene_id": "scene0025_00",
         "prompt": "Is 'the cabinet closest to the blinds' black?",
         "text": "No.",
-        "answer_id": "9JTcYimQtRNKQfE4xiP4w9",
+        "answer_id": "GDh5sNshjYBiJ8cCtnQAfm",
         "model_id": "LLaVA-3D-7B",
         "metadata": {}
     },
@@ -283,7 +283,7 @@
         "scene_id": "scene0025_00",
         "prompt": "Is 'the cabinet under the window' near books?",
         "text": "Yes.",
-        "answer_id": "hPon9N7a3t4miteaxk2tFd",
+        "answer_id": "78q9sySJTdLAn7N8M3esSS",
         "model_id": "LLaVA-3D-7B",
         "metadata": {}
     },
@@ -291,8 +291,8 @@
         "question_id": "scene0025_00_16_2_geometry_1",
         "scene_id": "scene0025_00",
         "prompt": "Is 'the cabinet under the window' taller or shorter than the desk?",
-        "text": "Shorter.",
-        "answer_id": "agTTrr6KjdxBWA5pVSBuA2",
+        "text": "Taller.",
+        "answer_id": "Vt89tPcrnvnkCwpqKdLTPD",
         "model_id": "LLaVA-3D-7B",
         "metadata": {}
     },
@@ -300,8 +300,8 @@
         "question_id": "scene0025_00_41_0_appearance_1",
         "scene_id": "scene0025_00",
         "prompt": "Is 'the pillow near the door' red?",
-        "text": "No.",
-        "answer_id": "6Cnq93Stvbo5yKKqmn5uD4",
+        "text": "No, it is white.",
+        "answer_id": "SJ3pve6WQ9FMpGuEWe7ioj",
         "model_id": "LLaVA-3D-7B",
         "metadata": {}
     },
@@ -309,8 +309,8 @@
         "question_id": "scene0025_00_41_1_existence_1",
         "scene_id": "scene0025_00",
         "prompt": "Is there a plant next to 'the pillow below the large whiteboard'?",
-        "text": "No.",
-        "answer_id": "4SuMXv4vrbbzGgzEg9eXqz",
+        "text": "No, there isn't.",
+        "answer_id": "MkqicYZ7Q4FrftdvrCfHFW",
         "model_id": "LLaVA-3D-7B",
         "metadata": {}
     },
@@ -319,7 +319,7 @@
         "scene_id": "scene0025_00",
         "prompt": "Is 'the pillow opposite the fan' close to the door?",
         "text": "Yes.",
-        "answer_id": "PPwQsXuqVxx9jkGKirbmcs",
+        "answer_id": "2Fx5wR9Cu8bGrUaBA6VRbH",
         "model_id": "LLaVA-3D-7B",
         "metadata": {}
     },
@@ -328,7 +328,7 @@
         "scene_id": "scene0025_00",
         "prompt": "Is there a cup next to 'the monitor closest to the windowsill'?",
         "text": "Yes.",
-        "answer_id": "EpAbi9j78AhyGLNBjf5TmP",
+        "answer_id": "YnBiP9aZSC6MKynPFM3FWA",
         "model_id": "LLaVA-3D-7B",
         "metadata": {}
     },
@@ -337,7 +337,7 @@
         "scene_id": "scene0025_00",
         "prompt": "Does 'the monitor closest to the blinds' have a white frame?",
         "text": "Yes.",
-        "answer_id": "GnH8cTspWCsEvuRDfBfJNv",
+        "answer_id": "D8NmM7MTxzGCCrwRGTcY3X",
         "model_id": "LLaVA-3D-7B",
         "metadata": {}
     },
@@ -346,7 +346,7 @@
         "scene_id": "scene0025_00",
         "prompt": "Is 'the monitor with brown frame' taller or shorter than the adjacent monitor?",
         "text": "Taller.",
-        "answer_id": "HxRE7dyogKL9kJT3uaq8pt",
+        "answer_id": "dGcw7rK7AHhrmf84wNWXTA",
         "model_id": "LLaVA-3D-7B",
         "metadata": {}
     },
@@ -355,7 +355,7 @@
         "scene_id": "scene0025_00",
         "prompt": "Look at the monitor behind black keyboard on the smaller desk, what color is its frame?",
         "text": "Black.",
-        "answer_id": "DNMty9Mdzw3vKo6yHfTLFb",
+        "answer_id": "389X6UZSSrCrqcKerVu53G",
         "model_id": "LLaVA-3D-7B",
         "metadata": {}
     },
@@ -364,7 +364,7 @@
         "scene_id": "scene0025_00",
         "prompt": "Is 'the monitor with white frame on the smaller desk' next to a white keyboard?",
         "text": "Yes.",
-        "answer_id": "AsGUeGHWph9XYtrF9TGHsE",
+        "answer_id": "UV6t7UeyBHDKFmBB9Hy4BW",
         "model_id": "LLaVA-3D-7B",
         "metadata": {}
     },
@@ -373,7 +373,7 @@
         "scene_id": "scene0025_00",
         "prompt": "Is 'the monitor with white frame on the smaller desk' taller or lower than the adjacent monitor?",
         "text": "Taller.",
-        "answer_id": "VSsndadntXVHnMRTLyKZAs",
+        "answer_id": "D8uo9MrwZ7aPRYwGo9Yzdn",
         "model_id": "LLaVA-3D-7B",
         "metadata": {}
     },
@@ -381,8 +381,8 @@
         "question_id": "scene0025_00_39_0_spatial_1",
         "scene_id": "scene0025_00",
         "prompt": "Is the black fan close to the window?",
-        "text": "No.",
-        "answer_id": "AXWW4paJaWHBusmTxRQPW2",
+        "text": "Yes.",
+        "answer_id": "iAQEw2dCHVqnanVmDQBQ8g",
         "model_id": "LLaVA-3D-7B",
         "metadata": {}
     },
@@ -391,7 +391,7 @@
         "scene_id": "scene0025_00",
         "prompt": "What color is the fan on the ground?",
         "text": "Black.",
-        "answer_id": "PqRJMa6eNy56CFyg5qQVZk",
+        "answer_id": "fmuFV7Ly9J4YQBCnzhK33T",
         "model_id": "LLaVA-3D-7B",
         "metadata": {}
     },
@@ -400,7 +400,7 @@
         "scene_id": "scene0025_00",
         "prompt": "Is the black fan taller or shorter than the nearby shelf?",
         "text": "Shorter.",
-        "answer_id": "BZW9fBQDToFRHCCFTbHphq",
+        "answer_id": "amAq6xCD4evnWaRyHECxur",
         "model_id": "LLaVA-3D-7B",
         "metadata": {}
     },
@@ -409,7 +409,7 @@
         "scene_id": "scene0025_00",
         "prompt": "What color is the office chair pushed into desk?",
         "text": "Black.",
-        "answer_id": "UBf3mh7yhebShDsEyzd8hi",
+        "answer_id": "RC8zSEY4S5C9dS3akuPTuk",
         "model_id": "LLaVA-3D-7B",
         "metadata": {}
     },
@@ -417,8 +417,8 @@
         "question_id": "scene0025_00_12_1_existence_1",
         "scene_id": "scene0025_00",
         "prompt": "Is there a refrigerator next to 'the office chair beside the larger desk'?",
-        "text": "No, there isn't.",
-        "answer_id": "UuD8a5QcxNkrpQgbaSg8fQ",
+        "text": "No.",
+        "answer_id": "KWgKJ73geFSgcSGYn9yhea",
         "model_id": "LLaVA-3D-7B",
         "metadata": {}
     },
@@ -427,7 +427,7 @@
         "scene_id": "scene0025_00",
         "prompt": "Which is closer to 'the office chair beside the larger desk', window or door?",
         "text": "Window.",
-        "answer_id": "KfV9ZQti94hA4apCx65HZY",
+        "answer_id": "CTHVTQyzrKBfWAhHNHdzX6",
         "model_id": "LLaVA-3D-7B",
         "metadata": {}
     },
@@ -436,7 +436,7 @@
         "scene_id": "scene0025_00",
         "prompt": "What color is the office chair beside the smaller desk?",
         "text": "Black.",
-        "answer_id": "GMqcSx9bJneGSPeNdpYCX4",
+        "answer_id": "8Z47tjmqbxqmuhAVX2chuM",
         "model_id": "LLaVA-3D-7B",
         "metadata": {}
     },
@@ -444,8 +444,8 @@
         "question_id": "scene0025_00_13_1_spatial_1",
         "scene_id": "scene0025_00",
         "prompt": "Is 'the office chair oriented towards the door' close to the door?",
-        "text": "Yes, the office chair is close to",
-        "answer_id": "QVbf3LKGhaDvQYabspJi3u",
+        "text": "Yes.",
+        "answer_id": "m5UB2AUAuBmtZEMS7kuxam",
         "model_id": "LLaVA-3D-7B",
         "metadata": {}
     },
@@ -454,7 +454,7 @@
         "scene_id": "scene0025_00",
         "prompt": "Is there a white keyboard next to 'the office chair oriented towards the door'?",
         "text": "Yes.",
-        "answer_id": "JHxa6trih3GGsWh63rDvTx",
+        "answer_id": "CXLxMUzBgwTc6hZw9soeat",
         "model_id": "LLaVA-3D-7B",
         "metadata": {}
     },
@@ -463,7 +463,7 @@
         "scene_id": "scene0025_00",
         "prompt": "Is there a keyboard next to the white paper towel roll?",
         "text": "Yes.",
-        "answer_id": "kZN8zka9cj5fcWKZcnJtji",
+        "answer_id": "FasgC9oaJ2g56weyN59QY2",
         "model_id": "LLaVA-3D-7B",
         "metadata": {}
     },
@@ -472,7 +472,7 @@
         "scene_id": "scene0025_00",
         "prompt": "What color is 'the paper towel roll next to the black shelf'?",
         "text": "White.",
-        "answer_id": "HQuZ8UdXa9QDuMk8YYmxDV",
+        "answer_id": "Fyketr2CD8Qc2RYiVZQLk5",
         "model_id": "LLaVA-3D-7B",
         "metadata": {}
     },
@@ -480,8 +480,8 @@
         "question_id": "scene0025_00_35_2_spatial_0",
         "scene_id": "scene0025_00",
         "prompt": "Is the white paper towel roll next to the black shelf?",
-        "text": "Yes.",
-        "answer_id": "VUBwcKrAwv593v3HEa99Vd",
+        "text": "Yes, the white paper towel roll",
+        "answer_id": "NUAowjyYRP5RbgEBW7jR7o",
         "model_id": "LLaVA-3D-7B",
         "metadata": {}
     },
@@ -490,7 +490,7 @@
         "scene_id": "scene0025_00",
         "prompt": "What color is the taller cup?",
         "text": "White.",
-        "answer_id": "dcqUR9Yffj6qCHJgb4TDe2",
+        "answer_id": "jmws5PTdUuwPwR5bkwXTGX",
         "model_id": "LLaVA-3D-7B",
         "metadata": {}
     },
@@ -499,7 +499,7 @@
         "scene_id": "scene0025_00",
         "prompt": "Is the red cup taller or shorter than the white cup?",
         "text": "Taller.",
-        "answer_id": "EmAkzWHYjD92XdPzbLRozq",
+        "answer_id": "fp2xRDBoccPa2JVU83Brum",
         "model_id": "LLaVA-3D-7B",
         "metadata": {}
     },
@@ -508,7 +508,7 @@
         "scene_id": "scene0025_00",
         "prompt": "Is the red cup closer to the monitor than the white cup?",
         "text": "Yes.",
-        "answer_id": "URW3UgQuVVzvZQE9bd3ety",
+        "answer_id": "7Beex6wbkv4MVg7iYrJcEB",
         "model_id": "LLaVA-3D-7B",
         "metadata": {}
     },
@@ -516,8 +516,8 @@
         "question_id": "scene0025_00_31_0_spatial_1",
         "scene_id": "scene0025_00",
         "prompt": "Is the white cup closer to the monitor than the red cup?",
-        "text": "Yes, the white cup is closer to",
-        "answer_id": "a9kP4tYGDKjqEGJgctbUzG",
+        "text": "Yes.",
+        "answer_id": "3XDg4FxhN8C9t4cLhbYzaT",
         "model_id": "LLaVA-3D-7B",
         "metadata": {}
     },
@@ -525,8 +525,8 @@
         "question_id": "scene0025_00_31_1_appearance_0",
         "scene_id": "scene0025_00",
         "prompt": "What color is the cup closer to the chair?",
-        "text": "White.",
-        "answer_id": "8CGd39tDyxRtqJH47TXPSD",
+        "text": "Blue.",
+        "answer_id": "BXfpQ7zRRQrc3H5wNimYTb",
         "model_id": "LLaVA-3D-7B",
         "metadata": {}
     },
@@ -535,7 +535,7 @@
         "scene_id": "scene0025_00",
         "prompt": "Is the white cup taller or shorter than the red cup?",
         "text": "Taller.",
-        "answer_id": "KdMsVyQmmmyKwG5fTUVUHG",
+        "answer_id": "fLemoB3BxZYxKBfrAV9DQR",
         "model_id": "LLaVA-3D-7B",
         "metadata": {}
     },
@@ -543,8 +543,8 @@
         "question_id": "scene0025_00_36_0_geometry_0",
         "scene_id": "scene0025_00",
         "prompt": "Is 'the shelf near the windowsill' taller or shorter than the white shelf?",
-        "text": "Taller.",
-        "answer_id": "Ebs5koWDAihTRKjRLa5DB4",
+        "text": "Shorter.",
+        "answer_id": "cwZh9Gy8DfvTc98kyhRkZg",
         "model_id": "LLaVA-3D-7B",
         "metadata": {}
     },
@@ -553,7 +553,7 @@
         "scene_id": "scene0025_00",
         "prompt": "What color is the shelf near the windowsill?",
         "text": "White.",
-        "answer_id": "bbA2pi3uoZddBQz8urCrNX",
+        "answer_id": "VqSNBk4XjWCJiKLjcKzYHi",
         "model_id": "LLaVA-3D-7B",
         "metadata": {}
     },
@@ -562,7 +562,7 @@
         "scene_id": "scene0025_00",
         "prompt": "Is there a trash can next to the short black shelf?",
         "text": "Yes.",
-        "answer_id": "ftpB9JFoQewV2MHMRXXoeG",
+        "answer_id": "RKMWE24K9QrD5H9ABYHwiY",
         "model_id": "LLaVA-3D-7B",
         "metadata": {}
     },
@@ -571,7 +571,7 @@
         "scene_id": "scene0025_00",
         "prompt": "What color is the shelf next to the door?",
         "text": "White.",
-        "answer_id": "S3xnGRSfYG2K3u9nMBkEJ3",
+        "answer_id": "6GdNFTXmszqM4hVFgsCprJ",
         "model_id": "LLaVA-3D-7B",
         "metadata": {}
     },
@@ -580,7 +580,7 @@
         "scene_id": "scene0025_00",
         "prompt": "Is 'the shelf next to the door' taller or shorter than the other shelf?",
         "text": "Taller.",
-        "answer_id": "7mRXYWNVn6JXGwWjcu6diz",
+        "answer_id": "333CH78WXjYxahdwzLXnV8",
         "model_id": "LLaVA-3D-7B",
         "metadata": {}
     },
@@ -589,7 +589,7 @@
         "scene_id": "scene0025_00",
         "prompt": "Is the tall white shelf far from the door?",
         "text": "Yes, the tall white shelf is",
-        "answer_id": "5ZEio8nsrPdaBvgdPc94RC",
+        "answer_id": "BgJ4tFKcKdTaXrsV2L5kaE",
         "model_id": "LLaVA-3D-7B",
         "metadata": {}
     },
@@ -598,7 +598,7 @@
         "scene_id": "scene0025_00",
         "prompt": "What shape is the blue trash bin?",
         "text": "Rectangular.",
-        "answer_id": "B7sy5jh46nSCpkseWXwBL6",
+        "answer_id": "iu5cL9mncvWXCLDkftedar",
         "model_id": "LLaVA-3D-7B",
         "metadata": {}
     },
@@ -607,7 +607,7 @@
         "scene_id": "scene0025_00",
         "prompt": "What color is the trash bin closest to the small whiteboard?",
         "text": "White.",
-        "answer_id": "Tvjetusa3i4d569dVEZGbn",
+        "answer_id": "3JfbuRoe3ZF3p3shstfySV",
         "model_id": "LLaVA-3D-7B",
         "metadata": {}
     },
@@ -615,8 +615,8 @@
         "question_id": "scene0025_00_19_2_existence_1",
         "scene_id": "scene0025_00",
         "prompt": "Is there any other trash bin next to blue trash bin?",
-        "text": "Yes, there is.",
-        "answer_id": "9sQ5ffrNfX7oMYXGE3AS46",
+        "text": "Yes.",
+        "answer_id": "b9HhqwSFjPUQjnjURSd3CH",
         "model_id": "LLaVA-3D-7B",
         "metadata": {}
     },
@@ -625,7 +625,7 @@
         "scene_id": "scene0025_00",
         "prompt": "What color is the round trash can outside the desk?",
         "text": "White.",
-        "answer_id": "PDvh9HfbhYoQrKRNvf4EnJ",
+        "answer_id": "UrL6ABCg4wSveSQ5kCoqaU",
         "model_id": "LLaVA-3D-7B",
         "metadata": {}
     },
@@ -634,7 +634,7 @@
         "scene_id": "scene0025_00",
         "prompt": "What shape is the white trash can closest to the door?",
         "text": "Rectangular.",
-        "answer_id": "63oQxWN4YRQF2UoQm4tTvU",
+        "answer_id": "4bG2noaacjZtFCDb5QPKCf",
         "model_id": "LLaVA-3D-7B",
         "metadata": {}
     },
@@ -642,8 +642,8 @@
         "question_id": "scene0025_00_18_2_existence_1",
         "scene_id": "scene0025_00",
         "prompt": "Is there a plant next to 'the white trash can closest to the door'?",
-        "text": "No.",
-        "answer_id": "B32WUVd89LCfg9sB6naMkD",
+        "text": "No, there isn't.",
+        "answer_id": "JYQqXQcSJj4RktfUoVoKTR",
         "model_id": "LLaVA-3D-7B",
         "metadata": {}
     },
@@ -652,7 +652,7 @@
         "scene_id": "scene0025_00",
         "prompt": "What color is the door next to the tall shelf?",
         "text": "Brown.",
-        "answer_id": "n75eUh2RjFUYkFJFMTHEdM",
+        "answer_id": "RRkmqy9jugNzvoLNJ8bqdu",
         "model_id": "LLaVA-3D-7B",
         "metadata": {}
     },
@@ -661,7 +661,7 @@
         "scene_id": "scene0025_00",
         "prompt": "Is the large brown door wider or shorter than the blinds?",
         "text": "Wider.",
-        "answer_id": "8Rp5HZKUqVT3AGGWbgTQRs",
+        "answer_id": "i5bqLVzs4BLe8rZhzeb2FJ",
         "model_id": "LLaVA-3D-7B",
         "metadata": {}
     },
@@ -670,7 +670,7 @@
         "scene_id": "scene0025_00",
         "prompt": "Is there a shelf next to the large brown door?",
         "text": "Yes.",
-        "answer_id": "GK59ESBP3fAS4Xeka4fGAN",
+        "answer_id": "Rfmyz5fUeCYLEuPwaAvevA",
         "model_id": "LLaVA-3D-7B",
         "metadata": {}
     },
@@ -679,7 +679,7 @@
         "scene_id": "scene0025_00",
         "prompt": "What color are the headphones on the small desk?",
         "text": "Black.",
-        "answer_id": "634zQaBFSJBVbevANH5dpv",
+        "answer_id": "SCr5VpdRywN7QD3qTmm7tb",
         "model_id": "LLaVA-3D-7B",
         "metadata": {}
     },
@@ -687,8 +687,8 @@
         "question_id": "scene0025_00_33_1_existence_0",
         "scene_id": "scene0025_00",
         "prompt": "Is there a keyboard next to 'the headphones on the small desk'?",
-        "text": "Yes.",
-        "answer_id": "Vx2XgBXUmYuK3x3jNm6iAa",
+        "text": "Yes, there is.",
+        "answer_id": "5dChhR7ab5GvShwbvtbcEu",
         "model_id": "LLaVA-3D-7B",
         "metadata": {}
     },
@@ -697,7 +697,7 @@
         "scene_id": "scene0025_00",
         "prompt": "What is above 'the headphones next to a black keyboard'?",
         "text": "Monitor.",
-        "answer_id": "KKSG7vrujkxYXwf6TmmDU4",
+        "answer_id": "PtEDsW73eZwXmi6jiQjyM3",
         "model_id": "LLaVA-3D-7B",
         "metadata": {}
     },
@@ -706,7 +706,7 @@
         "scene_id": "scene0025_00",
         "prompt": "What color is the sofa near the fan?",
         "text": "Black.",
-        "answer_id": "Z49Pteds3FGDaLq74xctje",
+        "answer_id": "PqTYFjherUcbSBw6tX5igX",
         "model_id": "LLaVA-3D-7B",
         "metadata": {}
     },
@@ -715,7 +715,7 @@
         "scene_id": "scene0025_00",
         "prompt": "Is there a refrigerator beside 'the sofa near the fan'?",
         "text": "No.",
-        "answer_id": "Juc58sHW4hVQdvJkrEaH25",
+        "answer_id": "VXh8VzxoyD6YvzRu5iKPsg",
         "model_id": "LLaVA-3D-7B",
         "metadata": {}
     },
@@ -724,7 +724,7 @@
         "scene_id": "scene0025_00",
         "prompt": "Is 'the sofa opposite the large whiteboard' next to the fan?",
         "text": "Yes.",
-        "answer_id": "NB9BTGJUt2pgZ4CAe9yTNj",
+        "answer_id": "dM7L8V2jMRPhXwEdMG2c2B",
         "model_id": "LLaVA-3D-7B",
         "metadata": {}
     },
@@ -733,7 +733,7 @@
         "scene_id": "scene0025_00",
         "prompt": "What color is the couch with white pillow?",
         "text": "Black.",
-        "answer_id": "6uwybQCxKJ4P8FGPvfw4bc",
+        "answer_id": "9m7rKX93a2qDH6tTDfai3f",
         "model_id": "LLaVA-3D-7B",
         "metadata": {}
     },
@@ -742,7 +742,7 @@
         "scene_id": "scene0025_00",
         "prompt": "Is 'the couch under the large whiteboard' close to window?",
         "text": "Yes.",
-        "answer_id": "3rgjBoyDof99xSsTN84fny",
+        "answer_id": "XXwE6fyXrYCNuGyYAu9cib",
         "model_id": "LLaVA-3D-7B",
         "metadata": {}
     },
@@ -751,7 +751,7 @@
         "scene_id": "scene0025_00",
         "prompt": "What is on 'the couch opposite the fan'?",
         "text": "Pillow.",
-        "answer_id": "4BPshXLge7nmpjzsRvUmb3",
+        "answer_id": "T46EsgdLrRpix8MW6YtBs2",
         "model_id": "LLaVA-3D-7B",
         "metadata": {}
     },
@@ -760,7 +760,7 @@
         "scene_id": "scene0025_00",
         "prompt": "What color is the phone on a big box?",
         "text": "White.",
-        "answer_id": "MEEiEFeAzQUPHk4wsCLq6N",
+        "answer_id": "PveCb87ZgJDDBdumDBRQTT",
         "model_id": "LLaVA-3D-7B",
         "metadata": {}
     },
@@ -769,7 +769,7 @@
         "scene_id": "scene0025_00",
         "prompt": "Is the white telephone close to monitor?",
         "text": "Yes.",
-        "answer_id": "RAec5ChjaqCbKjEukAhapg",
+        "answer_id": "TQ7cZpPi83A3pcJVX4i7qv",
         "model_id": "LLaVA-3D-7B",
         "metadata": {}
     },
@@ -778,7 +778,7 @@
         "scene_id": "scene0025_00",
         "prompt": "What is the white telephone placed on?",
         "text": "Desk.",
-        "answer_id": "Gz2HxKuE9TJJ2LCAX9QWUn",
+        "answer_id": "EdGyXLGqWmD4eH8DYCZ9JV",
         "model_id": "LLaVA-3D-7B",
         "metadata": {}
     }
